@@ -18,6 +18,18 @@ var secondString = "The background color will turn green"
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func magicButton(_ sender: Any) {
+    var word1 = true
+        var word2 = true
+        if word1 == word2{
+            printContent("This is true")
+            self.view.backgroundColor = UIColor.green
+        printContent("I completed both problem sets")
+        
+        
+        }
+        
+    }
     @IBAction func changeColorButtonPressed(_ sender: Any) {
         //Line 23 is conditional statement
         if firstString == "The background color will turn red"
@@ -30,7 +42,24 @@ var secondString = "The background color will turn green"
         }else{
             
             self.view.backgroundColor = UIColor.blue
+       
+        
+        
         }
+        
     
 }
+   
+    @IBOutlet weak var Label1: UILabel!
+    if firstString == "The label color will turn red"{
+        self.view.backgroundColor = UIColor.red
+  
+        @IBOutlet weak var Label2: UILabel!
+        if firstString == "The label color will turn blue"{
+            self.view.backgroundColor = UIColor.red
+        }
+        
+    
+    
+    }
 }
